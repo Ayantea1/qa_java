@@ -27,7 +27,7 @@ public class LionNoParamTest {
     @Test
     public void testGetKittens() throws Exception {
         when(feline.getKittens()).thenReturn(2);
-        var lion = new Lion("Сам\"Используйте допустимые значения пола животного - самец или самка\"ец", feline);
+        var lion = new Lion("Самец", feline);
         assertEquals(2,lion.feline.getKittens());
     }
 
