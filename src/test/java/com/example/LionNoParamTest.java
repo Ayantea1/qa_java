@@ -28,7 +28,7 @@ public class LionNoParamTest {
     public void testGetKittens() throws Exception {
         when(feline.getKittens()).thenReturn(2);
         var lion = new Lion("Самец", feline);
-        assertEquals(2,lion.feline.getKittens());
+        assertEquals(2,lion.getKittens());
     }
 
     @Test
